@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AppBar = () => (
-  <nav className="flex flex-row justify-between bg-white p-5 pt-[55px]">
+  <nav className="flex flex-row justify-between bg-white p-5">
     <Link
       href="/"
       className="flex flex-row items-center justify-center gap-[7.75px]"

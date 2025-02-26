@@ -55,7 +55,7 @@ const RecentCarousel = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden px-5">
+    <div className="w-full overflow-hidden">
       <div
         ref={sliderRef}
         className="scrollbar-hide flex cursor-grab gap-[10px] overflow-x-auto transition-transform duration-500"
@@ -68,7 +68,7 @@ const RecentCarousel = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="bg-gray flex w-[125px] flex-shrink-0 flex-col justify-center gap-3 rounded-lg p-3 pr-4"
+            className="flex w-[125px] flex-shrink-0 flex-col justify-center gap-3 rounded-lg bg-gray p-3 pr-4"
           >
             <Image src="file.svg" width={20} height={18} alt="repesent" />
             <div className="small-body-bold">{item}</div>
