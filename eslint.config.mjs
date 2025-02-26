@@ -10,7 +10,19 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends(
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:tailwindcss/recommended",
+  ),
+  {
+    settings: {
+      tailwindcss: {
+        callees: ["cn", "cva"],
+        config: "tailwind.config.ts",
+      },
+    },
+  },
 ];
 
 export default eslintConfig;
