@@ -14,8 +14,10 @@ const MenuItem: FC<MenuItemProps> = ({
   type,
   wrapperClass,
 }) => (
-  <div className={`flex flex-row justify-between ${wrapperClass ?? ""}`}>
-    <div className="flex flex-row items-center justify-center gap-[11px]">
+  <div
+    className={`flex flex-row items-center justify-between px-5 py-2 ${wrapperClass ?? ""}`}
+  >
+    <div className="flex flex-1 flex-row items-center gap-[11px]">
       <Image src="heart.svg" width={18} height={16} alt="heart" />
       <span>{title}</span>
     </div>
@@ -28,7 +30,7 @@ const MenuItem: FC<MenuItemProps> = ({
         className="h-[12px]"
       />
     ) : (
-      <div className="flex flex-row gap-[7px]">
+      <div className="flex flex-row items-center gap-[7px]">
         <Image src="sun.svg" width={15} height={15} alt="sun" />
         <span>{type}</span>
       </div>

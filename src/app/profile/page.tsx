@@ -7,12 +7,12 @@ const Page = () => (
   <div className="flex h-screen flex-col bg-gray">
     <AppBar />
     <div className="scrollbar-hide flex flex-1 flex-col gap-2.5 overflow-scroll">
-      <div className="bg-white px-5 pb-[22px] pt-[15px]">
-        <div className="h1">Minu profiil</div>
-        <MenuItem title="Profiiliandmed" wrapperClass="pt-[19px]" />
-        <MenuItem title="Keel / Language" wrapperClass="pt-[17px]" />
+      <div className="bg-white pb-[14px] pt-[15px]">
+        <div className="h1 px-5 pb-3">Minu profiil</div>
+        <MenuItem title="Profiiliandmed" />
+        <MenuItem title="Keel / Language" />
       </div>
-      <div className="flex flex-col gap-5 bg-white px-5 pb-[22px] pt-[23px]">
+      <div className="flex flex-col bg-white pb-[22px] pt-[23px]">
         <MenuItem title="Minu rehvihotell" special type="Michelin R19" />
         <MenuItem title="Minu broneeringud" />
         <MenuItem title="Minu otsingud" />
