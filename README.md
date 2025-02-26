@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img alt="RattadLogo" src="./public/logo.svg">
+</p>
+<h3 align="center">
+  Rattad24
+</h3>
+<p align="center">
+  Welcome to the Rattad24 Repo!
+</p>
 
-## Getting Started
+<p align="center">
+  <a href="https://vercel.com"><img alt="Vercel" src="https://img.shields.io/badge/Vercel-black?logo=vercel&logoColor=black&labelColor=white&color=white"/></a>
+  <a href="https://github.com/vercel/next.js"><img alt="Next.js" src="https://img.shields.io/badge/NextJS-black?logo=nextdotjs&labelColor=black&color=black" /></a>
+  <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-black?logo=typescript&logoColor=white&labelColor=%233178c6&color=3178c6" /></a>
+  <a href="https://tailwindcss.com/"><img alt="TailwindCSS" src="https://img.shields.io/badge/TailwindCSS-black?logo=tailwindcss&logoColor=white&labelColor=0ea5e9&color=0ea5e9" /></a>
+</p>
 
-First, run the development server:
+## What I Did
+
+Implemented 2 pages([Profiil](https://www.figma.com/design/C7itWhrLyBzeVynwlotBM1/Rattad24?node-id=2-594&t=f7Hcs2NIdcwBbwFl-1), [Step2](https://www.figma.com/design/C7itWhrLyBzeVynwlotBM1/Rattad24?node-id=293-3712&t=f7Hcs2NIdcwBbwFl-1)) and added navigations between pages.
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+public/          # Public assets
+src/             # Next.js Rattad Site
+├── app/         # App router pages
+├── components/  # React components
+├── molecules/   # Reusuable Basic Components
+└── styles/      # Basic CSS Styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/BlockNKey/rattad-next.git
+   cd rattad-next
+   ```
 
-## Learn More
+2. **Install Dependencies**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Run Development Server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
